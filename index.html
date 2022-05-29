@@ -17,7 +17,7 @@
       <section class="main__add-item add-item">
         <label for="new-task" class="add-item__label">Add Item</label>
         <div class="add-item__wrapper">
-          <input id="new-task"class="main__task add-item__task" type="text">
+          <input id="new-task"class="main__task main__text add-item__task" type="text">
           <button class="add-item__btn btn">Add</button>
         </div>
       </section>
@@ -25,17 +25,17 @@
       <ul class="main__list incomplete list">
         <li class="list__item">
           <input type="checkbox" class="list__check">
-          <label class="main-task list__task-label">Pay Bills</label>
-          <input type="text" class="main-task list__task-input">
+          <label class="main__task list__task-label">Pay Bills</label>
+          <input type="text" class="main__task main__text list__task-input">
           <button class="list__edit-btn btn">Edit</button>
           <button class="btn list__delete-btn">
             <img src="./remove.svg" alt="" class="list__delete-img">
           </button>
         </li>
-        <li class="list__edit-mode">
+        <li class="list__item list__edit-mode">
           <input type="checkbox" class="list__check">
-          <label class="main-task list__task-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="main-task list__task-input">
+          <label class="main__task list__task-label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="main__task main__text list__task-input">
           <button class="list__edit-btn btn">Save</button>
           <button class="btn list__delete-btn">
             <img src="./remove.svg" alt="" class="list__delete-img">
@@ -46,8 +46,8 @@
       <ul class="main__list completed list">
         <li class="list__item">
           <input type="checkbox" checked class="list__check list__check_active">
-          <label class="main-task list__task-label">See the Doctor</label>
-          <input type="text" class="main-task list__task-input">
+          <label class="main__task list__task-label">See the Doctor</label>
+          <input type="text" class="main__task main__text list__task-input">
           <button class="list__edit-btn btn">Edit</button>
           <button class="btn list__del-btn">
             <img src="./remove.svg" alt="" class="list__del-img">
