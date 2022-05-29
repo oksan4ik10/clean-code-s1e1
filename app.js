@@ -35,7 +35,7 @@ var createNewTaskElement=function(taskString){
     listItem.className = "list__item";
     
     label.innerText=taskString;
-    label.className='task main__task list__task-label';
+    label.className='main__task list__task-label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -45,9 +45,9 @@ var createNewTaskElement=function(taskString){
 
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit list__edit-btn btn";
+    editButton.className="list__edit-btn btn";
 
-    deleteButton.className="del btn list__del-btn";
+    deleteButton.className="btn list__del-btn";
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.alt='';
     deleteButtonImg.className = 'list__del-img';
@@ -172,7 +172,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     //Bind deleteTask to delete button.
     deleteButton.onclick=deleteTask;
     //Bind taskCompleted to checkBoxEventHandler.
-    checkBox.className="list__check list__check_active";
+    checkBox.className="list__check";
     checkBox.onchange=checkBoxEventHandler;
 }
 
