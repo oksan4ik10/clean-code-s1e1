@@ -129,7 +129,7 @@ input,button{
 }
 
 /* Completed */
-.completed .list__task-label {
+.completed__item {
 	text-decoration: line-through;
 	color: #888;
 }
