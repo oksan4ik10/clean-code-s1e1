@@ -18,9 +18,11 @@
 }
 
 @media (max-width:768px) {
+
   .banner { 
 		text-align: center;
 	}
+  
 }
 .main {
   display: block;
