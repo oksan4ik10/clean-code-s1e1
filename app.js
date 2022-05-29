@@ -105,7 +105,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+ 
     listItem.classList.toggle("list__edit-mode");
 };
 
