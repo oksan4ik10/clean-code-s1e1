@@ -113,6 +113,7 @@ var editTask=function(){
 //Delete task.
 var deleteTask=function(){
     console.log("Delete Task...");
+   
 
     var listItem=this.parentNode;
     var ul=listItem.parentNode;
@@ -129,6 +130,7 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     listItem.className = "list__item completed__item";
+    listItem.querySelector("label").classList.add("completed__label");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -141,6 +143,8 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.className = "list__item";
+    listItem.querySelector("label").classList.remove("completed__label");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
